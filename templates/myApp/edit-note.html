@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Notes</title>
+	<link rel="stylesheet"  href="{% static 'form-styles.css' %}">
+	
+</head>
+<body>
+	<div id="form-container">
+		<div id="back"> <a href="{% url 'view' data.reqid %}"> <p>&lt; </p></a>  </div>
+   <form method="POST">
+   	{% csrf_token %}
+
+   	<input type="text" name="title"  value="{{data.title}}" placeholder="{{data.title}}"required><br>
+
+   	<input type="date" name="date"  placeholder="date" required><br>
+   	<textarea name="body" placeholder="type the note here ..."  cols="50" rows="20" style="resize: none;">{{data.body}}</textarea><br>
+   	<input type="submit" id="submit" value="Update Note">
+   </form>
+   </div>
+</body>
+</html>

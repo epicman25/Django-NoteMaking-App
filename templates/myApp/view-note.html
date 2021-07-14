@@ -1,0 +1,36 @@
+{% extends "myApp/base.html" %}
+{%block content%}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Notes</title>
+	<link rel="stylesheet"  href="{% static 'styles.css' %}">
+</head>
+<body>
+
+	<h1 id="title">Notes</h1>
+	<a href="{% url 'create' d1 %}">
+		<div id="sample-note">
+		    <p>+</p>
+		</div>
+	</a>
+
+	<div id="container">
+    {% for i in data %}
+    <div class="note">
+    	<a href="{% url 'deleteNote' i.id  %}">Delete</a>
+    	<a href="{% url 'update' i.id  %}">Edit</a>
+    	<h1>{{i.title}}</h1>
+
+    	<h2>{{i.date}}</h2>
+    	<p>{{i.body}}</p>
+    </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
+
+{%endblock%}

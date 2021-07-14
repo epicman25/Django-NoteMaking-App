@@ -1,0 +1,43 @@
+body{
+	display: flex;
+	justify-content: center;
+    background-color: #CDF0EA;
+}
+
+#form-container{
+	margin: 20px 0px;
+	padding: 2%;
+	text-align: center;
+	border: black dashed 5px;
+	width: fit-content;
+	background-color: #F9F9F9;
+}
+
+form input,form textarea{
+	padding: 2%;
+	margin: 2% 0%;
+	width: 95%
+}
+
+#back p{
+	margin: 0;
+	padding: 0;
+   font-size: 50px;
+   font-weight: bolder;
+   
+}
+#back{
+	margin: 0;
+	padding: 0;
+	height: 70px;
+	width: 70px;
+}
+
+#back a{
+	text-decoration: none;
+	color: black;
+}
+#back p:hover{
+   transform: scale(1.1);
+   color: black;
+}

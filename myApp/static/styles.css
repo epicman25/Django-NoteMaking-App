@@ -1,0 +1,51 @@
+body{
+	font-family: ubuntu;
+	background-color: #CDF0EA;
+	padding: 2% 15%;
+}
+
+
+.note{
+	height: fit-content;
+	border: black dashed 5px;
+	padding: 2% 5%;
+	margin: 2% 0%;
+   background-color: #F9F9F9;
+}
+#title{
+	text-align: center;
+}
+
+.note a{
+   float: right;
+   text-decoration: none;
+   border: black dashed 3px;
+   padding: 0.5%;
+   color: black;
+   background-color: lightgrey;
+   margin: 0 1%;
+}
+
+#sample-note{
+	height: 200px;
+	width: 170px;
+	background-color: white;
+	border: black dashed 5px;
+	box-shadow: black 8px 8px 8px;
+	line-height: 120px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+#sample-note p{
+	font-size: 40px;
+
+}
+#sample-note:hover{
+	transform: scale(1.01);
+}
